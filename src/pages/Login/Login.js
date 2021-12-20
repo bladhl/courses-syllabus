@@ -1,22 +1,22 @@
 import React from 'react';
-import './Login.css';
+import classes from './Login.module.scss';
 
 function Login() {
 	return (
-		<div className="container">
-			<div className="login">
+		<div className={classes.container}>
+			<div className={classes.login}>
 				<h1>Courses Syllabus</h1>
-				<form className="login-form">
+				<form className={classes['login-form']}>
 					<label htmlFor="code">
 						<span>Username</span>
 						<input name="code" type="text" />
 					</label>
-					<label className="login-label-inputd" htmlFor="password">
+					<label className={classes['login-label-inputd']} htmlFor="password">
 						<span>Password</span>
 						<input type="password" name="password" />
-						<span className="forgot">Forgot password?</span>
+						<span className={classes.forgot}>Forgot password?</span>
 					</label>
-					<button className="button-submite" type="submit">
+					<button className={classes['button-submite']} type="submit">
 						Login
 					</button>
 				</form>

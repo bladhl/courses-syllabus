@@ -1,11 +1,11 @@
 import React from 'react';
-import './Course.css';
+import classes from './Course.module.scss';
 
 function Course() {
 	return (
-		<div className="course">
+		<div className={classes.course}>
 			<h3>ALGORITMOS Y ESTRUCTURAS DE DATOS</h3>
-			<div className="course-det">
+			<div className={classes['course-detail']}>
 				<span>credito: 4</span>
 				<span>catgoria: EEE</span>
 			</div>

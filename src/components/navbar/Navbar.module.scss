@@ -1,0 +1,40 @@
+.navbar {
+	background: white;
+	display: flex;
+	flex-flow: column nowrap;
+	/* position: fixed; */
+	justify-content: center;
+	box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+	a {
+		color: var(--primary-color);
+	}
+}
+
+.nav-logo {
+	font-weight: var(--font-semi-bold);
+	font-family: var(--font-poppins);
+	font-size: var(--h1-font-size);
+	display: flex;
+	padding: 1rem;
+	margin: 1rem;
+	align-items: center;
+	border-radius: 0.5rem;
+}
+.nav-links {
+	display: flex;
+	margin: 0.5rem;
+	flex-flow: column nowrap;
+	a {
+		border: solid 1px var(--secondary-color-lighten);
+		padding: 0.5rem;
+		margin: 0.5rem;
+		color: var(--text-color-light);
+		text-align: center;
+		border-radius: 0.5rem;
+		font-weight: var(--font-semi-bold);
+		&:hover {
+			background: var(--secondary-color-alt);
+      color: var(--text-color-lighten);
+		}
+	}
+}

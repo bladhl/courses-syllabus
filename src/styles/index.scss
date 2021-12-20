@@ -1,0 +1,91 @@
+@use './_variables.scss' as *;
+@import-normalize;
+
+:root {
+	// colors
+	--primary-color: #{$primary-color};
+	--primary-color-alt: #{$primary-color-alt};
+	--primary-color-light: #{$primary-color-light};
+	--primary-color-lighten: #{$primary-color-lighten};
+
+	--secondary-color: #{$secondary-color};
+	--secondary-color-alt: #{$secondary-color-alt};
+	--secondary-color-light: #{$secondary-color-light};
+	--secondary-color-lighten: #{$secondary-color-lighten};
+
+	--title-color: #{$title-color};
+	--text-color: #{$text-color};
+	--text-color-light: #{$text-color-light};
+	--text-color-lighten: #{$text-color-lighten};
+	--container-color: #{$container-color};
+
+	// font size
+	--font-poppins: #{$font-family};
+	--big-font-size: #{$big-font-size};
+	--h1-font-size: #{$h1-font-size};
+	--h2-font-size: #{$h2-font-size};
+	--h3-font-size: #{$h3-font-size};
+	--normal-font-size: #{$normal-font-size};
+	--small-font-size: #{$small-font-size};
+	--smaller-font-size: #{$smaller-font-size};
+
+	// font weight
+	--font-medium: #{$font-medium};
+	--font-semi-bold: #{$font-semi-bold};
+
+	// margins
+	--margin-0-5: #{$margin-0-5};
+	--margin-0-75: #{$margin-0-75};
+	--margin-1: #{$margin-1};
+	--margin-1-5: #{$margin-1-5};
+	--margin-2: #{$margin-2};
+	--margin-2-5: #{$margin-2-5};
+
+	// z index
+	--z-fixed: #{$z-fixed};
+
+	@media screen and (min-width: 968px) {
+		:root {
+			// font size
+			--big-font-size: 3.5rem;
+			--h1-font-size: 2.25rem;
+			--h2-font-size: 1.5rem;
+			--h3-font-size: 1.25rem;
+			--normal-font-size: 1rem;
+			--small-font-size: 0.875rem;
+			--smaller-font-size: 0.813rem;
+		}
+	}
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--body-color);
+	color: var(--text-color);
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
